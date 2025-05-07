@@ -3,6 +3,7 @@ body {
   background-color: black;
   color: white;
   font-family: "Comic Sans MS", "Comic Neue", sans-serif;
+  font-weight: bold;
 }
 
 header.titulo {
