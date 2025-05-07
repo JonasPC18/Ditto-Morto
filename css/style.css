@@ -5,16 +5,24 @@ body {
   font-family: "Comic Sans MS", "Comic Neue", sans-serif;
 }
 
-header.titulo {
+body.titulo {
   text-align: center;
 }
 
-header.titulo h1 {
+body.titulo h1 {
   font-size: 100px;
+  font-weight: bold;
+}
+
+
+ul.menu li {
+  display: inline;
+  margin: 30px;
 }
 
 @media (max-width: 600px) {
   header.titulo h1 {
     font-size: 60px;
+
   }
 }
