@@ -3,7 +3,6 @@ body {
   background-color: black;
   color: white;
   font-family: "Comic Sans MS", "Comic Neue", sans-serif;
-  font-weight: bold;
 }
 
 header.titulo {
@@ -12,4 +11,10 @@ header.titulo {
 
 header.titulo h1 {
   font-size: 100px;
+}
+
+@media (max-width: 600px) {
+  header.titulo h1 {
+    font-size: 60px;
+  }
 }
