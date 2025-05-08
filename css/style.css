@@ -31,17 +31,13 @@ ul.menu li {
   width: 200px;
   height: 100px;
   background: url('../images/moldura_10.jpg') center/cover no-repeat;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 5vw; /* ou use clamp para manter controle */
-  max-font-size: 28px; /* evita ultrapassar a moldura */
-  padding: 0 10px;
+  font-size: clamp(12px, 2vw, 30px);
+  line-height: 100px;
   text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  color: white;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
 }
 
 .imagem_capa {
