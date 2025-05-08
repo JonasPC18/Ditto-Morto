@@ -28,9 +28,16 @@ ul.menu {
 }
 
 ul.menu li {
+  width: 200px;
+  height: 100px;
+  background: url('../images/moldura_10.jpg') center/cover no-repeat;
+  font-size: clamp(12px, 2vw, 30px);
+  line-height: 100px;
+  text-align: center;
+  color: white;
   display: inline-block;
   margin: 20px;
-  font-size: 20px;
+  position: relative;
 }
 
 .imagem_capa {

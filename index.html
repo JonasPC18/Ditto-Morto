@@ -22,5 +22,34 @@
 
     <div class="imagem_capa"></div>
     
+    <script>
+        const frames = [
+          'images/moldura_10.jpg',
+          'images/moldura_10.jpg',
+          'images/moldura_20.jpg',
+          'images/moldura_20.jpg',
+          'images/moldura_30.jpg',
+          'images/moldura_30.jpg'
+        ];
+      
+        document.querySelectorAll('ul.menu li').forEach((item) => {
+          let frame = 0;
+          let interval;
+      
+          item.addEventListener('mouseenter', () => {
+            interval = setInterval(() => {
+              item.style.backgroundImage = `url('${frames[frame]}')`;
+              frame = (frame + 1) % frames.length;
+            }, 1000 / 24); // 24fps
+          });
+      
+          item.addEventListener('mouseleave', () => {
+            clearInterval(interval);
+            frame = 0;
+            item.style.backgroundImage = `url('${frames[0]}')`;
+          });
+        });
+      </script>
+
 </body>
 </html>
