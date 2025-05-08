@@ -63,9 +63,10 @@ ul.menu li {
     align-items: center;
     justify-content: center;
     height: 100px;
-    width: 80%;
+    width: 200px;
     margin: 10px auto;
   }
+  
   .imagem_capa {
     background-image: url('../images/capa_dm02.jpg');
   }
