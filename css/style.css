@@ -28,17 +28,18 @@ ul.menu {
 }
 
 ul.menu li {
-  width: 200px;
+  display: inline-block;
+  width: 200px; /* tamanho fixo da moldura */
   height: 100px;
-  background: url('../images/moldura_10.jpg') center/cover no-repeat;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 5vw; /* ou use clamp para manter controle */
-  max-font-size: 28px; /* evita ultrapassar a moldura */
-  padding: 0 10px;
+  background-image: url('../images/moldura_10.jpg');
+  background-size: cover;
+  background-position: center;
   text-align: center;
+  vertical-align: middle;
+  line-height: 100px; /* centraliza o texto verticalmente */
+  padding: 0 10px;
+  font-family: 'ComicSans';
+  color: white;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
