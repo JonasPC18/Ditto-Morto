@@ -28,16 +28,21 @@ ul.menu {
 }
 
 ul.menu li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 100px;
-  background: url('../images/moldura_10.jpg') center/cover no-repeat;
-  font-size: clamp(12px, 2vw, 30px);
-  line-height: 100px;
-  text-align: center;
+  background-image: url('../images/moldura_10.jpg');
+  background-size: cover;
+  background-position: center;
   color: white;
-  display: inline-block;
-  margin: 20px;
-  position: relative;
+  font-family: 'ComicSans';
+  font-size: clamp(12px, 2vw, 28px); /* <- isso controla o tamanho responsivamente */
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 10px;
 }
 
 .imagem_capa {
