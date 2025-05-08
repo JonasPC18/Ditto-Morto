@@ -28,21 +28,21 @@ ul.menu {
 }
 
 ul.menu li {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
+  display: inline-block;
+  width: 200px; /* tamanho fixo da moldura */
   height: 100px;
-  background: url('../images/moldura_10.jpg') center/cover no-repeat;
-  font-family: 'ComicSans';
-  font-size: 1.8em; /* relativo à altura da moldura */
-  max-height: 100px;
-  color: white;
+  background-image: url('../images/moldura_10.jpg');
+  background-size: cover;
+  background-position: center;
   text-align: center;
-  white-space: nowrap;
+  vertical-align: middle;
+  line-height: 100px; /* centraliza o texto verticalmente */
+  padding: 0 10px;
+  font-family: 'ComicSans';
+  color: white;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 0 10px;
+  white-space: nowrap;
 }
 
 .imagem_capa {
