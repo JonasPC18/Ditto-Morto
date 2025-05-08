@@ -1,8 +1,14 @@
+@font-face {
+  font-family: 'ComicZ'; /* nome que você escolhe */
+  src: url('fonts/comicz.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   background-color: black;
   color: white;
-  font-family: "Comic Sans MS", "Comic Neue", sans-serif;
+  font-family: 'ComicZ', cursive;
 }
 
 body.titulo {
@@ -21,7 +27,7 @@ ul.menu li {
 }
 
 @media (max-width: 600px) {
-  header.titulo h1 {
+  body.titulo h1 {
     font-size: 60px;
 
   }
