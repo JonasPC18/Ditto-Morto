@@ -35,7 +35,8 @@ ul.menu li {
   height: 100px;
   background: url('../images/moldura_10.jpg') center/cover no-repeat;
   font-family: 'ComicSans';
-  font-size: clamp(12px, 2vw, 28px);
+  font-size: 1.8em; /* relativo à altura da moldura */
+  max-height: 100px;
   color: white;
   text-align: center;
   white-space: nowrap;
