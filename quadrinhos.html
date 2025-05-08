@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ditto Morto</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="titulo">
+
+  <header>
+    <h1>Ditto Morto</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="filmes.html" class="moldura">FILMES</a></li>
+        <li><a href="quadrinhos.html" class="moldura">QUADRINHOS</a></li>
+        <li><a href="desenhos.html" class="moldura">DESENHOS</a></li>
+        <li><a href="bio.html" class="moldura">BIO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    const frames = [
+      'images/moldura_10.jpg',
+      'images/moldura_20.jpg',
+      'images/moldura_30.jpg'
+    ];
+
+    document.querySelectorAll('a.moldura').forEach((item) => {
+      let frame = 0;
+      let interval;
+
+      item.addEventListener('mouseenter', () => {
+        interval = setInterval(() => {
+          item.style.backgroundImage = `url('${frames[frame]}')`;
+          frame = (frame + 1) % frames.length;
+        }, 100);
+      });
+
+      item.addEventListener('mouseleave', () => {
+        clearInterval(interval);
+        frame = 0;
+        item.style.backgroundImage = `url('${frames[0]}')`;
+      });
+    });
+  </script>
+
+</body>
+</html>
