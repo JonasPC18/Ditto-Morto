@@ -31,13 +31,14 @@ ul.menu li {
   width: 200px;
   height: 100px;
   background: url('../images/moldura_10.jpg') center/cover no-repeat;
-  font-size: clamp(12px, 2vw, 30px);
-  line-height: 100px;
-  text-align: center;
   color: white;
-  display: inline-block;
-  margin: 20px;
-  position: relative;
+  font-size: clamp(12px, 2vw, 28px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .imagem_capa {
