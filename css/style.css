@@ -61,6 +61,17 @@ a.moldura {
   white-space: nowrap;
 }
 
+.bio {
+  max-width: 800px;
+  margin: 40px auto;         /* centraliza horizontalmente */
+  padding: 20px;
+  text-align: justify;       /* justifica o texto */
+  font-size: 18px;
+  line-height: 1.6;
+  color: white;
+}
+
+
 /* Imagem de capa */
 .imagem_capa {
   width: 100%;
