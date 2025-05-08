@@ -33,15 +33,14 @@ ul.menu li {
   justify-content: center;
   width: 200px;
   height: 100px;
-  background-image: url('../images/moldura_10.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
+  background: url('../images/moldura_10.jpg') center/cover no-repeat;
   font-family: 'ComicSans';
-  font-size: clamp(12px, 2vw, 28px); /* <- isso controla o tamanho responsivamente */
-  overflow: hidden;
+  font-size: clamp(12px, 2vw, 28px);
+  color: white;
   text-align: center;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 0 10px;
 }
 
