@@ -28,21 +28,21 @@ ul.menu {
 }
 
 ul.menu li {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
+  display: inline-block;
+  width: 200px; /* tamanho fixo da moldura */
   height: 100px;
   background-image: url('../images/moldura_10.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
-  font-family: 'ComicSans';
-  font-size: clamp(12px, 2vw, 28px); /* <- isso controla o tamanho responsivamente */
-  overflow: hidden;
   text-align: center;
-  white-space: nowrap;
+  vertical-align: middle;
+  line-height: 100px; /* centraliza o texto verticalmente */
   padding: 0 10px;
+  font-family: 'ComicSans';
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .imagem_capa {
